@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="input" id="input"></div>
-        <div class="buttons">
-          <div class="operators">
-            <div>+</div>
-            <div>-</div>
-            <div>&times;</div>
-            <div>&divide;</div>
-          </div>
-          <div class="leftPanel">
-            <div class="numbers">
-              <div>7</div>
-              <div>8</div>
-              <div>9</div>
-            </div>
-            <div class="numbers">
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
-            </div>
-            <div class="numbers">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-            </div>
-            <div class="numbers">
-              <div>0</div>
-              <div>.</div>
-              <div id="clear">C</div>
-            </div>
-          </div>
-          <div class="equal" id="result">=</div>
+    <div id="CalcBody">
+        <div >
+            <input id="inputBox" type="text">
         </div>
-      </div>
+        <div id="btnBox">
+            <div id="Operations">
+                <div onclick="getNumber('+')">&plus;</div>
+                <div onclick="getNumber('-')">&minus;</div>
+                <div onclick="getNumber('*')">&times;</div>
+                <div onclick="getNumber('/')">&divide;</div>
+            </div>
+            <div id="leftpanel">
+            <div id="Numbers">
+                <div onclick="getNumber('9')">9</div>
+                <div onclick="getNumber('8')">8</div>
+                <div onclick="getNumber('7')">7</div>
+            </div>
+            <div id="Numbers">
+                <div onclick="getNumber('6')">6</div>
+                <div onclick="getNumber('5')">5</div>
+                <div onclick="getNumber('4')">4</div>
+            </div>
+            <div id="Numbers">
+                <div onclick="getNumber('1')">1</div>
+                <div onclick="getNumber('2')">2</div>
+                <div onclick="getNumber('3')">3</div>
+            </div>
+            <div id="Numbers">
+                <div onclick="getNumber('0')">0</div>
+                <div onclick="getNumber('.')">.</div>
+                <div onclick="clearResult()">C</div>
+            </div>
+        </div>
+            <div class="btnEqual" onclick="getResult()">&equals;</div>
+        </div>
+        
+    </div>
 </body>
 </html>

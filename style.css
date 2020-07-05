@@ -1,118 +1,93 @@
-body {
-    width: 500px;
-    margin: 4% auto;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 5px;
-    font-size: 1.8rem;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
-  
-  .calculator {
-    padding: 20px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 1px;
-  }
-  
-  .input {
-    border: 1px solid #ddd;
-    border-radius: 1px;
-    height: 60px;
-    padding-right: 15px;
-    padding-top: 10px;
-    text-align: right;
-    margin-right: 6px;
-    font-size: 2.5rem;
-    overflow-x: auto;
-    transition: all .2s ease-in-out;
-  }
-  
-  .input:hover {
-    border: 1px solid #bbb;
-    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  }
-  
-  .buttons {}
-  
-  .operators {}
-  
-  .operators div {
-    display: inline-block;
-    border: 1px solid #bbb;
-    border-radius: 1px;
-    width: 80px;
-    text-align: center;
+#CalcBody{
+    margin: auto;
+    border: 3px solid;
+    border-color: black;
     padding: 10px;
-    margin: 20px 4px 10px 0;
-    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: fit-content;
+    color: white;
     background-color: #ddd;
-    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-  }
-  
-  .operators div:hover {
+    border-color: #aaa;
+}
+
+#inputBox{
+    border: 1px groove;
+    width: 480px;
+    text-align: right;
+    background-color:whitesmoke;
+    padding: 20px;
+    font-size: 40px;
+    height: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 10px 6px 0px 0px;
+    overflow-x: auto;
+}
+
+#inputBox:hover{
+    box-shadow: inset yellowgreen;
+    border: violet;
+}
+
+#Numbers{}
+
+#Operators{}
+
+#Numbers Div{
+    display: inline-block;
+    width: 80px;
+    border: 1px groove;
+    text-align: center;
+    background-color:rgb(95, 95, 90);
+    padding: 20px;
+    font-size: 40px;
+    margin: 10px 4px 0px 0px;
+}
+
+#Numbers div:hover{ 
+    color:rgb(95, 95, 90);
     background-color: #ddd;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-color: #aaa;
-  }
-  
-  .operators div:active {
-    font-weight: bold;
-  }
-  
-  .leftPanel {
+}
+
+#Operations Div {
     display: inline-block;
-  }
-  
-  .numbers div {
-    display: inline-block;
-    border: 1px solid #ddd;
-    border-radius: 1px;
     width: 80px;
+    border: 1px groove;
     text-align: center;
-    padding: 10px;
-    margin: 10px 4px 10px 0;
-    cursor: pointer;
-    background-color: #f9f9f9;
-    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-  }
-  
-  .numbers div:hover {
-    background-color: #f1f1f1;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color:rgb(106, 27, 233);
+    padding: 20px;
+    font-size: 40px;
+    margin: 10px 4px 0px 0px;
+}
+
+#Operations Div:hover{
+    color:rgb(106, 27, 233);
+    background-color: #ddd;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    border-color: #bbb;
-  }
-  
-  .numbers div:active {
-    font-weight: bold;
-  }
-  
-  div.equal {
+    border-color: #aaa;
+}
+
+#leftpanel{
     display: inline-block;
-    border: 1px solid #3079ED;
-    border-radius: 1px;
-    width: 17%;
+}
+.btnEqual{
+    display: inline-block;
+    border: 1px groove;
+    width: 100px;
     text-align: center;
-    padding: 127px 10px;
-    margin: 10px 6px 10px 0;
+    background-color:rgb(95, 95, 90);
+    padding: 167px 10px;
+    font-size: 40px;
     vertical-align: top;
-    cursor: pointer;
-    color: #FFF;
-    background-color: #4d90fe;
-    transition: all .2s ease-in-out;
-  }
-  
-  div.equal:hover {
-    background-color: #307CF9;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    margin: 10px 6px 10px 0px;
+}
+
+.btnEqual:hover{
+    color:rgb(95, 95, 90);
+    background-color: #ddd;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    border-color: #1857BB;
-  }
-  
-  div.equal:active {
-    font-weight: bold;
-  }
+    border-color: #aaa;
+}
